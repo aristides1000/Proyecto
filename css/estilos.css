@@ -1,0 +1,465 @@
+/*las imagénes están guardadas en la carpeta img*/
+/*las fuentes son importadas de fuentes de google*/
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+/*voy a comentar los efectos para poder trabajar en tiempo real colocandole 1 antes del punto*/
+
+body{
+    background-image: url('../img/body2.webp');
+    animation: movimiento 40s infinite linear alternate;
+    background-attachment: fixed;
+}
+
+@keyframes movimiento{
+    from{background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.jumbotron {
+    background-image: url('../img/tenor4.jpg');
+    animation: movimientos 40s infinite linear alternate;
+    background-size: 100%;
+}
+
+@keyframes movimientos{
+    from{background-position: top right;
+    }to{
+        background-position: bottom left;
+    }
+}
+
+.jumbotron h1 {
+    color: transparent;
+    font-family: 'Pacifico', cursive;
+    line-height: 1.8;
+    background-image: url('../img/fondo_letra_4.jpg');
+    background-size: 200%;
+    background-position: 50% 19%;
+    -webkit-background-clip: text;
+    position: relative;
+    animation: movimientos 40s infinite linear alternate;
+}
+
+.jumbotron p {
+    color: transparent;
+    font-family: 'Pacifico', cursive;
+    line-height: 1.8;
+    background-image: url('../img/fondo_letra_4.jpg');
+    background-size: 200%;
+    background-position: 50% 19%;
+    -webkit-background-clip: text;
+    position: relative;
+    animation: movimientos 40s infinite linear alternate;
+    /*
+    color: transparent;
+    font-family: 'Pacifico';
+    background: linear-gradient(
+        45deg,
+        #990099,
+        #ffff33
+        );
+    line-height: 1.8;
+    -webkit-background-clip: text;
+    font-weight:bold;
+    */
+}
+
+/*Este es el fondo del panel heading*/
+.panel-heading{
+    background-image: url('../img/header.gif');
+    animation: movimiento 25s infinite linear alternate;
+    background-size: 75px;
+}
+
+/*esto es para darle formato al glyphicon de Panel heading con degradado*/
+.panel-heading span{
+    color: transparent;
+    background: linear-gradient(
+        45deg,
+        #00ccff 10%,
+        #fff 90%
+        );
+    line-height: 1.8;
+    -webkit-background-clip: text;
+    position: relative;
+    font-size: 17px;
+}
+
+/*esto es para darle formato al texto del Panel-heading con degradado*/
+.panel-heading p{
+    color: transparent;
+    background: linear-gradient(
+        180deg,
+        #00ccff,
+        #fff
+        );
+    line-height: 1.8;
+    -webkit-background-clip: text;
+    font-family: 'Fredoka One', cursive;
+    white-space: nowrap;
+    font-size: 17px;
+}
+
+/*formato panel body*/
+.panel-body{
+    background-image: url('../img/intersection2.png');
+    font-family: 'Pacifico';
+    font-size: 22px;
+    animation: movimientos 10s infinite linear alternate;
+}
+
+@keyframes movimientoss{
+    from{background-position: top;
+    }to{
+        background-position: bottom;
+    }
+}
+
+/*para darle formato a los enlaces del panel-body*/
+.panel-body a:link, .panel-body a:visited{
+    color: transparent;
+    background: linear-gradient(
+        180deg,
+        yellow,
+        red
+        );
+    line-height: 1.8;
+    -webkit-background-clip: text;
+    font-size: 17px;
+    font-family: 'Baloo', cursive;
+    -webkit-transition-duration: 0.4s !important;
+}
+
+.panel-body a:hover, .panel-body a:active{
+    color: transparent !important;
+    background: linear-gradient(
+        180deg,
+        blue,
+        violet
+        ) !important;
+    line-height: 1.8 !important;
+    -webkit-background-clip: text !important;
+    font-size: 17px !important;
+    font-family: 'Baloo', cursive !important;
+}
+
+/*Para darle transición a los botones*/
+.btn{
+    background-color: #33CCFF;
+    -webkit-transition-duration: 0.4s;
+}
+
+.btn:hover {
+    background-color: #500050;
+    -webkit-transition-duration: 0.4s;
+}
+/*sirve para darle formato a el parrafo del boton*/
+.btn p{
+    color: transparent;
+    background: linear-gradient(
+        180deg,
+        orange,
+        #fffbc1
+        );
+    line-height: 1.8;
+    -webkit-background-clip: text;
+    font-family: 'Pacifico';
+    white-space: nowrap;
+    font-size: 22px;
+}
+
+/*sirve para darle formato al glyphicon del boton*/
+.btn span{
+    color: transparent;
+    background: linear-gradient(
+        180deg,
+        orange,
+        #fffbc1
+        );
+    line-height: 1.8;
+    -webkit-background-clip: text;
+    white-space: nowrap;
+    font-size: 22px;
+}
+
+.navbar {
+    background-image: url('../img/navbar.gif');
+    animation: movimiento 30s infinite linear alternate;
+    background-size: 7%;
+}
+
+/*menú superior iquierdo, enlaza con inicio*/
+/*características del texto*/
+.navbar-brand:link, .navbar-brand:visited {
+    color: transparent;
+    background: linear-gradient(
+        180deg,
+        yellow,
+        red
+        );
+    line-height: 1.8;
+    -webkit-background-clip: text;
+    font-size: 17px;
+    font-family: 'Audiowide', cursive;
+    -webkit-transition-duration: 0.4s;
+}
+
+.navbar-brand:hover, .navbar-brand:active {
+    color: transparent !important;
+    background: linear-gradient(
+        180deg,
+        blue,
+        violet
+        ) !important;
+    line-height: 1.8 !important;
+    -webkit-background-clip: text !important;
+    font-size: 19px !important;
+    font-family: 'Audiowide', cursive !important;
+}
+
+/*Menú superior central*/
+#navbar li a:link, #navbar li a:visited{
+    /*color: transparent;
+    background: linear-gradient(
+        180deg,
+        yellow,
+        red
+        );
+    line-height: 1.8;
+    -webkit-background-clip: text;*/
+    font-size: 14px;
+    font-family: 'Baloo', cursive;
+    -webkit-transition-duration: 0.4s;
+    color: #abeaaf;
+}
+
+#navbar li a:hover, #navbar li a:active{
+    /*color: transparent !important;
+    background: linear-gradient(
+        180deg,
+        blue,
+        violet
+        ) !important;
+    line-height: 1.8 !important;
+    -webkit-background-clip: text !important;*/
+    font-size: 14px !important;
+    font-family: 'Baloo', cursive !important;
+    color: #2d66b0;
+}
+
+.dropdown-menu{
+    background-color: #2b2b2b;
+}
+
+.open > a{
+    background-color: #2b2b2b !important;
+}
+
+.btn-primary{
+    border: none;
+}
+
+.contenido-articulo{
+    background-image: url('../img/intersection2.png');
+    font-family: 'Pacifico';
+    animation: movimientos 10s infinite linear alternate;
+    padding: 2em;/*medida inteligente mejor que px y % es más exacta*/
+    font-size: 16px;
+}
+
+.sidebar{
+    background-image: url('../img/navbar.gif');
+    animation: movimiento 30s infinite linear alternate;
+    background-size: 25%;
+}
+
+.sidebar li a:link, .sidebar li a:visited{
+    /*color: transparent;
+    background: linear-gradient(
+        180deg,
+        yellow,
+        red
+        );
+    line-height: 1.8;
+    -webkit-background-clip: text;*/
+    font-size: 14px;
+    font-family: 'Baloo', cursive;
+    -webkit-transition-duration: 0.4s;
+    color: #abeaaf;
+}
+
+.sidebar li a:hover, .sidebar li a:active{
+    /*color: transparent !important;
+    background: linear-gradient(
+        180deg,
+        blue,
+        violet
+        ) !important;
+    line-height: 1.8 !important;
+    -webkit-background-clip: text !important;*/
+    font-size: 14px !important;
+    font-family: 'Baloo', cursive !important;
+    color: #2d66b0;
+}
+
+#gg-entradas{
+    background-image: url('../img/intersection2.png');
+    font-family: 'Pacifico';
+    font-size: 22px;
+    animation: movimientos 10s infinite linear alternate;
+}
+
+.sidebar, .gg-elemento{
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.gg-elemento:hover{
+    color: deepskyblue !important;
+}
+
+#gg-comentarios{
+    background-image: url('../img/dark-triangles2.png');
+    font-family: 'Pacifico';
+    font-size: 22px;
+    animation: movimientos 10s infinite linear alternate;
+    color: white;
+}
+
+#gg-favoritos{
+    background-image: url('../img/black_scales2.png');
+    font-family: 'Pacifico';
+    font-size: 22px;
+    animation: movimientos 10s infinite linear alternate;
+    color: white;
+}
+
+.parte-gestor-entradas{
+    background-image: url('../img/intersection2.png');
+    font-family: 'Baloo';
+    font-weight: lighter !important;
+    animation: movimientos 10s infinite linear alternate;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+    background-image: url('../img/black_scales2.png');
+    font-family: 'Baloo';
+    font-weight: lighter !important;
+    animation: movimientos 10s infinite linear alternate;
+    color: white;
+}
+
+.table-striped>tbody>tr>td {
+    border: none;
+}
+
+.table>thead>tr>th {
+    border: none;
+}
+
+tbody:before{
+    content: "-";
+    display: block;
+    line-height: 1em;
+    color: transparent;
+}
+
+#btn{
+    color: white;
+}
+
+.form-nueva-entrada{
+    padding: 2em;
+    background-image: url('../img/intersection2.png');
+    font-family: 'Baloo';
+    font-weight: lighter !important;
+    animation: movimientos 10s infinite linear alternate;
+}
+
+.perfil h4{
+    color: transparent;
+    background: linear-gradient(
+        180deg,
+        yellow,
+        red
+        );
+    -webkit-background-clip: text;
+    font-family: 'Fredoka One', cursive;
+    /*font-size: 22px;*/
+}
+
+.perfil{
+    background-image: url('../img/intersection2.png');
+    font-family: 'Pacifico';
+    font-size: 22px;
+    animation: movimientos 10s infinite linear alternate;
+    border-radius: 10px;
+}
+
+.boton_subir{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#label-archivo {
+    background-color: #2b2b2b;
+    color: #a1fed1;
+    cursor: pointer;
+    padding: 0.5em;
+    width: 100%;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s;
+}
+
+#label-archivo:hover {
+    background-color: #a1fed1;
+    color: #ff78c1;
+    border-radius: 30px;
+}
+
+.cuatro-cero-cuatro{
+    background-image: url('../img/tenor4.jpg');
+    animation: movimientos 40s infinite linear alternate;
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+.cuatro-cero-cuatro h1 {
+    color: transparent;
+    font-family: 'Pacifico', cursive;
+    line-height: 1.8;
+    background-image: url('../img/fondo_letra_4.jpg');
+    background-size: 200%;
+    background-position: 50% 19%;
+    -webkit-background-clip: text;
+    position: relative;
+    animation: movimientos 40s infinite linear alternate;
+}
+
+.cuatro-cero-cuatro h3 {
+    color: transparent;
+    font-family: 'Pacifico', cursive;
+    line-height: 1.8;
+    background-image: url('../img/fondo_letra_4.jpg');
+    background-size: 200%;
+    background-position: 50% 19%;
+    -webkit-background-clip: text;
+    position: relative;
+    animation: movimientos 40s infinite linear alternate;
+}
+
+#cuatro-cero-cuatro {
+    text-decoration: none;
+}
